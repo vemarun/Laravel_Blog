@@ -11,13 +11,10 @@
 |
 */
 
-Route::get('/abc', function () {
-    return view('posts.index');
-});
-Route::get('/posts', function () {
-    return view('posts');
-});
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/posts/create','PostsController@create');
+
 Route::get('/', 'PostsController@index');
+
+Route::post('/posts', 'PostsController@store');
+
+Route::get('/posts/{post}', 'PostsController@show');

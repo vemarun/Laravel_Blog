@@ -8,4 +8,5 @@ class posts extends Model
 {
     //
 	protected $table='posts';
+	protected $fillable=['title','body'];
 }
