@@ -30,11 +30,11 @@
 	</div>
 	<h1 class="text-center pt-4" style="font-family:beyondthemountains;">Arun Verma</h1>
 	<p class="text-center" style="color:#A4A4A4;letter-spacing:2px">Personal Blog</p>
-	<div style="text-align:center;" class="pt-4">
-		<a href="/"><p class="d-sm-inline pr-5 text-dark font-weight-bold">HOME</p></a>
-		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-bold">PORTFOLIO</p></a>
-		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-bold">ABOUT ME</p></a>
-		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-bold">CONTACT</p></a>
+	<div style="text-align:center;letter-spacing:2px" class="pt-4">
+		<a href="/"><p class="d-sm-inline pr-5 text-dark font-weight-normal">HOME</p></a>
+		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-normal">PORTFOLIO</p></a>
+		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-normal">ABOUT ME</p></a>
+		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-normal">CONTACT</p></a>
 		</div>
 	<hr>
 		
