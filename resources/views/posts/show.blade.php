@@ -2,9 +2,13 @@
 
 
 @section('content')
-<div class="col-sm-8 mt-5">
-<h1>{{$post->title}}</h1>
-<p class="text-muted">{{$post->updated_at->diffForHumans()}}</p>
+<div class="col-sm-12 mt-5">
+<h1 class="text-center">{{$post->title}}</h1> 
+<p class="text-muted text-center">
+<a href="#">{{$post->user->name}}</a><br>
+{{$post->updated_at->diffForHumans()}}
+
+</p>
 <p>{{$post->body}}</p>
 
 <hr>
@@ -13,7 +17,7 @@
 	@foreach($post->comments as $comment)
 	<li class="list-group-item bg-light">
 	<strong>
-		{{$comment->created_at->diffForHumans()}} :&nbsp;
+		{{$comment->created_at->diffForHumans()}}&nbsp; <a href="#">{{$comment->user->name}}</a>&nbsp;: 
 	</strong>
 		{{ $comment->body}}
 	</li>

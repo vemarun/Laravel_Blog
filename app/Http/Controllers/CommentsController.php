@@ -14,12 +14,19 @@ class CommentsController extends Controller
 			$this ->validate(request(),[
 			'body'=>'required'
 		]);
-		
+		if(auth()->check()){
+			
 		Comment::create([
 			'body'=> request('body'),
-			'posts_id'=>$post->id
+			'posts_id'=>$post->id,
+			'user_id'=>auth()->id()
 		]);
 		
 		return back();
+		}
+		else
+		{
+			return redirect('/login');
+		}
 	}
 }

@@ -7,12 +7,25 @@ use App\posts;
 
 class PostsController extends Controller
 {
+	
+	public function __construct()
+	{
+		$this->middleware('auth')->except(['index','show']);
+	}
     
 	public function index(){
-	
-		$posts = Posts::latest()->get();
 		
-		return view('posts.index',compact('posts'));
+		$archives=posts::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')
+		->groupBy('year','month')
+		->orderByRaw('min(created_at) desc')
+		->get()
+		->toArray();
+	
+		$posts = Posts::latest()
+			->filter(request(['month','year']))
+			->get();
+		
+		return view('posts.index',compact('posts','archives'));
 }
 	public function create(){
 	
@@ -42,7 +55,8 @@ class PostsController extends Controller
 		]);
 		Posts::create([
 			'title'=> request('title'),
-			'body'=> request('body')
+			'body'=> request('body'),
+			'user_id'=> auth()->user()->id
 		]);
 		
 		return redirect('/');
