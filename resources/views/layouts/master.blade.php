@@ -3,6 +3,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+	@yield('require')
 		<title>Can you see the future</title>
 		<style>
 	@font-face {
@@ -21,9 +22,9 @@
 	
 	<div style="color:#A4A4A4;font-weight:600;letter-spacing:2px">
 	@if(Auth::check())
-		<x class="d-md-inline float-left">Welcome, <a href="/logout">{{Auth::user()->name}}</a></x>
+		<span class="d-md-inline float-left">Welcome, <a href="/logout">{{Auth::user()->name}}</a></span>
 	@else
-	   <x class="d-md-inline float-left">Welcome, Guest <a href="/login">Login</a></x>
+	   <span class="d-md-inline float-left">Welcome, Guest <a href="/login">Login</a></span>
 	@endif
 	
 		<span style="float:right" class="d-none d-sm-block col-centered pt-1">
@@ -46,5 +47,6 @@
 		
 @yield('content')
 		</div>
+@yield('script')
 	</body>
 </html>

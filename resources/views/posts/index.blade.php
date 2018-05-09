@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
- <img src="images/main.jpeg" width="100%" height="100%" class="mt-5">
+ <img src="images/main.jpeg" width="100%" height="100%" class="mt-5" alt="main">
   <div class="row mt-5">
 		<div class="col-sm-8">
 			<h3>Recent Posts</h3><hr>
