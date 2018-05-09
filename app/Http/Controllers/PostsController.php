@@ -21,7 +21,7 @@ class PostsController extends Controller
 		->get()
 		->toArray();
 	
-		$posts = Posts::latest()
+		$posts = Posts::take(5)->latest()
 			->filter(request(['month','year']))
 			->get();
 		
