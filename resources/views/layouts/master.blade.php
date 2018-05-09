@@ -8,7 +8,7 @@
 		<style>
 	@font-face {
     font-family: beyondthemountains;
-    src: url(fonts/beyond_the_mountains.otf);
+    src: url(/fonts/beyond_the_mountains.otf);
 }
 			a{
 				text-decoration:none !important;
