@@ -1,2 +1,2 @@
 # Laravel Blog
-![alt text](https://screenshotscdn.firefoxusercontent.com/images/c9cb5bcc-5087-4386-b521-3209a15229e9.png)
+![Blog Sample](https://screenshotscdn.firefoxusercontent.com/images/2a2e8b72-4ae4-4eee-b901-0e9bb5afd7c7.jpg)
