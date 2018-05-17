@@ -27,5 +27,7 @@
 	
 </div>
 
+<h3>Not registered ? </h3><a href="/register">Register here</a>
+
 
 @endsection
