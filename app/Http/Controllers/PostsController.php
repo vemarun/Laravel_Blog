@@ -21,8 +21,9 @@ class PostsController extends Controller
 		->get()
 		->toArray();
 	
-		$posts = Posts::latest()->simplePaginate(5);
-			
+		$posts = Posts::latest()
+			->filter(request(['month','year']))
+			->simplePaginate(5);
 		
 		return view('posts.index',compact('posts','archives'));
 }
