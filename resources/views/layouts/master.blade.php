@@ -23,6 +23,7 @@
 	<div style="color:#A4A4A4;font-weight:600;letter-spacing:2px">
 	@if(Auth::check())
 		<span class="d-md-inline float-left">Welcome, <a href="/posts/create">{{Auth::user()->name}}</a></span>
+		<span class="d-md-inline float-left"> &nbsp;| <a href="/logout"> logout</a></span>
 	@else
 	   <span class="d-md-inline float-left">Welcome, Guest <a href="/login">Login</a></span>
 	@endif
