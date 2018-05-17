@@ -7,7 +7,9 @@
 			@foreach ($posts as $post)
 				@include('posts.post')
 			@endforeach
+			{{$posts->links()}}
 		</div>
+		
 		<div class="col-sm-4">
 			<h3>Archives</h3><hr>
 			<ol class="list-unstyled">
