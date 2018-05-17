@@ -24,7 +24,7 @@
 	@if(Auth::check())
 		<span class="d-md-inline float-left">Welcome, <a href="/logout">{{Auth::user()->name}}</a></span>
 	@else
-	   <span class="d-md-inline float-left">Welcome, Guest <a href="/login">Login</a></span>
+	   <span class="d-md-inline float-left">Welcome, Guest <a href="/posts/create">Login</a></span>
 	@endif
 	
 		<span style="float:right" class="d-none d-sm-block col-centered pt-1">
