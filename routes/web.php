@@ -31,4 +31,4 @@ Route::post('/register','RegistrationController@store');
 Route::get('/login','SessionsController@create')->name('login');
 Route::get('/logout','SessionsController@destroy');
 
-Route::post('login_check','SessionsController@login_check');
+Route::post('/login_check','SessionsController@login_check');

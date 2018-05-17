@@ -29,10 +29,10 @@
 	@endif
 	
 		<span style="float:right" class="d-none d-sm-block col-centered pt-1">
-		<a href="#"><i class="fab fa-steam-symbol fa-fw pr-5" aria-hidden="true"></i></a>
-		<a href="#"><i class="fab fa-linkedin-in fa-fw pr-5" aria-hidden="true"></i></a>
-		<a href="#"><i class="fab fa-github fa-fw pr-5" aria-hidden="true"></i></a>
-		<a href="#"><i class="fab fa-discord fa-fw pr-5" aria-hidden="true"></i></a>
+		<a href="https://steamcommunity.com/id/dynamiteofficial/"><i class="fab fa-steam-symbol fa-fw pr-5" aria-hidden="true"></i></a>
+		<a href="https://steamcommunity.com/id/dynamiteofficial/"><i class="fab fa-linkedin-in fa-fw pr-5" aria-hidden="true"></i></a>
+		<a href="https://github.com/vemarun"><i class="fab fa-github fa-fw pr-5" aria-hidden="true"></i></a>
+		<a href="https://discordapp.com/invite/avdAE76"><i class="fab fa-discord fa-fw pr-5" aria-hidden="true"></i></a>
 		</span>
 
 	</div>
@@ -40,7 +40,7 @@
 	<p class="text-center" style="color:#A4A4A4;letter-spacing:2px">Personal Blog</p>
 	<div style="text-align:center;letter-spacing:2px" class="pt-4">
 		<a href="/"><p class="d-sm-inline pr-5 text-dark font-weight-normal">HOME</p></a>
-		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-normal">PORTFOLIO</p></a>
+		<a href="https://vemarun.in"><p class="d-sm-inline pr-5 text-dark font-weight-normal">PORTFOLIO</p></a>
 		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-normal">ABOUT ME</p></a>
 		<a href="#"><p class="d-sm-inline pr-5 text-dark font-weight-normal">CONTACT</p></a>
 		</div>
